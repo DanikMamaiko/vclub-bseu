@@ -40,10 +40,15 @@ body {
     }
 
     .desktop-logo {
-        top: 76px;
+        top: 31px;
         left: 0;
-        width: 127px;
-        height: 53px;
+        width: 135px;
+        height: 125px;
+        transition: all 0.3s ease;
+    }
+
+    .desktop-logo:hover {
+        transform: scale(1.07);
     }
 
     .desktop-menu {
@@ -113,7 +118,7 @@ body {
     }
 
     .desktop-menu a {
-        color: #144280;
+        color: #479937;
         font-size: 18px;
         font-weight: 500;
         text-decoration: none;
@@ -124,16 +129,16 @@ body {
     }
 
     .desktop-menu a:hover {
-        color: #0066cc;
+        color: #479937;
     }
 
     .menu-title-wrapper{
-        color: #1651A2;
+        color: #479937;
         text-align: center;
         font-family: Ubuntu;
         font-size: 20px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 101.336%; /* 20.267px */
         letter-spacing: -0.6px;
     }
@@ -145,7 +150,7 @@ body {
         transform: translateX(-50%);
         width: 566px;
         height: 253px;
-        background: #EEEEEE;
+        background: #479937;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
         display: none;
         flex-direction: row;
@@ -184,7 +189,7 @@ body {
         }
 
     .submenu-item:hover {
-        color: #0066cc;
+        color: #479937;
     }
 
     .submenu-title {
@@ -206,9 +211,9 @@ body {
         position: relative;
         width: 35px;
         margin-left: 59px;
-    }
-
-    .desktop-language-icon {
+      }
+      
+      .desktop-language-icon {
         width: 35px;
         height: 35px;
         background-image: url('images/languageicon.png');
@@ -218,26 +223,33 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .language-dropdown {
+      }
+      
+      .language-dropdown {
         position: absolute;
-        top: calc(100% + 10px);
         right: 0;
         width: 107px;
-        height: 158px;
-        display: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        overflow: hidden;
+        margin-top: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
         z-index: 1000;
-    }
-
-    .language-switcher:hover .language-dropdown {
-        display: block;
-    }
+      }
+      
+      .language-switcher:hover .language-dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
 
     .language-dropdown-content {
         width: 100%;
         height: 100%;
-        background: #565656(173, 216, 230, 0.95);
+        background: #479937(173, 216, 230, 0.95);
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(5px);
         ;
@@ -258,7 +270,7 @@ body {
 
     .language-dropdown-item:hover,
     .language-dropdown-item.active {
-        background: rgba(173, 216, 230, 1);
+        background: #c3e7bc;
     }
 
     /* Скрываем мобильную версию на десктопе */
@@ -294,10 +306,10 @@ body {
     }
 
     .mobile-logo {
-        left: 20px;
-        top: 20px;
-        width: 100px;
-        height: 42px;
+        left: 10px;
+        top: 7px;
+        width: 70px;
+        height: 60px;
     }
 
     .burger-menu {
@@ -324,13 +336,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #144280;
+        background: #479937;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #144280;
+        background: #479937;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -339,7 +351,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #144280;
+        background: #479937;
     }
 
     .side-menu {
@@ -366,7 +378,7 @@ body {
 
     .menu-title {
         padding: 15px 20px;
-        color: #0066CC;
+        color: #479937;
         font-size: 18px;
         font-weight: 500;
         display: flex;
@@ -377,7 +389,7 @@ body {
     }
 
     .menu-title:hover {
-        color: #99CCFF;
+        color: #7ca174;
         background-color: #F5F7FA;
     }
 
@@ -395,8 +407,8 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        border-left: 2px solid #0066CC;
-        border-top: 2px solid #0066CC;
+        border-left: 2px solid #479937;
+        border-top: 2px solid #479937;
         transform: rotate(-135deg);
         transform-origin: 25% 25%;
         transition: transform 0.3s;
@@ -420,7 +432,7 @@ body {
     .submenu a {
         display: block;
         padding: 10px 20px 10px 40px;
-        color: #0066CC;
+        color: #479937;
         text-decoration: none;
         font-size: 16px;
         border-top: 1px solid #E6F0FA;
@@ -428,7 +440,7 @@ body {
     }
 
     .submenu a:hover {
-        color: #99CCFF;
+        color: #7ca174;
     }
 
     .language-switcher-container {
@@ -681,7 +693,7 @@ body {
 }
 
 .all-news-text {
-    color: #1651A2;
+    color: #479937;
     font-size: 16px;
     font-weight: 500;
     line-height: 16.21px;
@@ -890,7 +902,7 @@ body {
 .footer {
     width: 100%;
     height: 520px;
-    background: linear-gradient(97deg, #144280 0.78%, #005999 99.22%);
+    background: linear-gradient(97deg, #479937 0.78%, #071f02 99.22%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1336,9 +1348,9 @@ body {
 
 .year-buttons button.active,
 .month-buttons button.active {
-    background: #1651A2;
+    background: #479937;
     color: white;
-    border-color: #1651A2;
+    border-color: #479937;
 }
 
 .reset-filter {
@@ -1361,7 +1373,7 @@ body {
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    background: #1651A2;
+    background: #479937;
     color: white;
     border: none;
     border-radius: 6px;
@@ -1371,7 +1383,7 @@ body {
 }
 
 .filter-button:hover {
-    background: #134a8f;
+    background: #479937;
 }
 
 .filter-button img {
@@ -1410,9 +1422,9 @@ body {
 }
 
 .pagination-button.active {
-    background: #1651A2;
+    background: #479937;
     color: white;
-    border-color: #1651A2;
+    border-color: #479937;
 }
 
 .pagination-button.disabled {
@@ -1530,7 +1542,7 @@ body {
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background: #1651A2;
+    background: #479937;
     color: white;
     border: none;
     border-radius: 8px;
@@ -1542,7 +1554,7 @@ body {
 }
 
 .load-more-btn:hover {
-    background: #134a8f;
+    background: #1d4e14;
     transform: translateY(-1px);
 }
 
@@ -1614,14 +1626,14 @@ body {
     border-radius: 8px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #2E3146;
+    color: #c3e7bc;
     transition: all 0.3s ease;
     background: white;
 }
 
 .search-input:focus {
     outline: none;
-    border-color: #1651A2;
+    border-color: #479937;
     box-shadow: 0 0 0 3px rgba(22, 81, 162, 0.1);
 }
 
@@ -1747,8 +1759,8 @@ body {
 
 .search-input:focus {
     outline: none;
-    border-color: #1651A2;
-    box-shadow: 0 0 0 3px rgba(22, 81, 162, 0.1);
+    border-color: #479937;
+    box-shadow: 0 0 0 3px #c3e7bc;
 }
 
 .search-input::placeholder {
@@ -1787,7 +1799,7 @@ body {
 
 .filter-select:focus {
     outline: none;
-    border-color: #1651A2;
+    border-color: #479937;
     box-shadow: 0 0 0 3px rgba(22, 81, 162, 0.1);
 }
 
