@@ -24,56 +24,55 @@
 
             <!-- Боковое меню -->
             <div class="side-menu">
-                <div class="menu-item" data-i18n-key="menu.about">
-                    <div class="menu-title" data-i18n="menu.about">О факультете
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="submenu">
-                        <a href="../../about/history/" data-i18n="submenu.history">История</a>
-                        <a href="../../about/deanery/" data-i18n="submenu.deans_office">Деканат</a>
-                        <a href="../../about/student-life/" data-i18n="submenu.student_council">Студенческая жизнь</a>
-                    </div>
+              <!-- 1. О сообществе -->
+              <div class="menu-item">
+                <div class="menu-title">О сообществе
+                  <div class="arrow"></div>
                 </div>
-                <div class="menu-item" data-i18n-key="menu.for_students">
-                    <div class="menu-title" data-i18n="menu.for_students">Студенту
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="submenu">
-                        <a href="../../allnews/" data-i18n="submenu.schedule">Новости факультета</a>
-                    </div>
+                <div class="submenu">
+                  <a href="/community/history/">История</a>
+                  <a href="/community/structure/">Организационная структура</a>
+                  <a href="/community/founding-docs/">Учредительные документы</a>
+                  <a href="/community/news/">Новости</a>
                 </div>
-                <div class="menu-item" data-i18n-key="menu.for_applicants">
-                    <div class="menu-title" data-i18n="menu.for_applicants">Абитуриенту
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="submenu">
-                        <a href="../../applicants/documentsList/" data-i18n="submenu.admission_rules">Перечень документов</a>
-                        <a href="../../applicants/reveiveDocumentsPeriod/" data-i18n="submenu.open_days">Сроки приема документов</a>
-                        <a href="../../applicants/openDoorDay/" data-i18n="submenu.open_door_day">Дни открытых дверей</a>
-                        <a href="../../applicants/introductoryCampaign/" data-i18n="submenu.introductory_campaign">Вступительная компания</a>
-                        <a href="../../students/disciplines/" data-i18n="submenu.courses">Учебные дисциплины</a>
-                        <a href="../../students/hostel/" data-i18n="submenu.hostel">Общежитие</a>
-                    </div>
+              </div>
+
+              <!-- 2. Отделы -->
+              <div class="menu-item">
+                <div class="menu-title">Отделы
+                  <div class="arrow"></div>
                 </div>
-                <div class="menu-item" data-i18n-key="menu.science">
-                    <div class="menu-title" data-i18n="menu.science">Наука
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="submenu">
-                        <a href="../../science/science/" data-i18n="submenu.directions">Наука</a>
-                    </div>
+                <div class="submenu">
+                  <a href="/departments/info/">Информационный отдел</a>
+                  <a href="/departments/public-relations/">Отдел по работе с общественностью</a>
+                  <a href="/departments/international/">Международный отдел</a>
+                  <a href="/departments/labor/">Трудовой отдел</a>
+                  <a href="/departments/science/">Отдел по научной деятельности</a>
+                  <a href="/departments/military/">Военно-патриотический отдел</a>
+                  <a href="/departments/operations/">Хозяйственный отдел</a>
                 </div>
-                <div class="menu-item" data-i18n-key="menu.departments">
-                    <div class="menu-title" data-i18n="menu.departments">Кафедры
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="submenu">
-                        <a href="../../departments/faculties/" data-i18n="submenu.economic_informatics">Кафедры</a>
-                    </div>
+              </div>
+
+              <!-- 3. Выпускникам -->
+              <div class="menu-item">
+                <div class="menu-title">Выпускникам
+                  <div class="arrow"></div>
                 </div>
-                <div class="language-switcher-container">
-                    <img src="../../images/languageicon.png" alt="" class="mobile-language-icon" id="mobileLanguageIcon">
+                <div class="submenu">
+                  <a href="/alumni/form/">Анкета выпускника</a>
+                  <a href="/alumni/day/">День выпускника</a>
+                  <a href="/alumni/cooperation/">Сотрудничество</a>
                 </div>
+              </div>
+
+              <!-- 4. Контакты -->
+              <div class="menu-item">
+                <div class="menu-title"><a href="/contacts/" style="display:block;color:inherit;text-decoration:none;">Контакты</a></div>
+              </div>
+
+              <div class="language-switcher-container">
+                <img src="../../images/languageicon.png" alt="" class="mobile-language-icon" id="mobileLanguageIcon">
+              </div>
             </div>
 
             <div class="overlay"></div>
@@ -84,94 +83,83 @@
                 <div class="desktop-header-container">
                     <a href="../../"><img src="images/logo.png" alt="Логотип" class="logo desktop-logo"></a>
                     <div class="desktop-menu">
-                        <div class="desktop-menu-item">
-                            <div class="menu-title-wrapper">
-                                <span data-i18n="menu.about">О факультете</span>
-                            </div>
-                            <div class="desktop-submenu">
-                                <div class="submenu-column">
-                                    <a href="../../about/history/" class="submenu-item" data-i18n="submenu.history">История</a>
-                                    <a href="../../about/deanery/" class="submenu-item" data-i18n="submenu.deans_office">Деканат</a>
-                                    <a href="../../about/student-life/" class="submenu-item" data-i18n="submenu.student_council">Студенческая жизнь</a>
-                                </div>
-                                <div class="submenu-column right">
-                                    <div class="submenu-title" data-i18n="submenu.faculty_title">Факультет Цифровой Экономики</div>
-                                    <div class="submenu-description" data-i18n="submenu.faculty_description">О факультете</div>
-                                </div>
-                            </div>
+                      <!-- 1. О сообществе -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <span>О сообществе</span>
                         </div>
-                        <div class="desktop-menu-item">
-                            <div class="menu-title-wrapper">
-                                <span data-i18n="menu.for_students">Студенту</span>
-                            </div>
-                            <div class="desktop-submenu">
-                                <div class="submenu-column">
-                                    <a href="../../allnews/" class="submenu-item" data-i18n="submenu.schedule">Новости факультета</a>
-                                </div>
-                                <div class="submenu-column right">
-                                    <div class="submenu-title" data-i18n="submenu.for_students_title">Для студентов</div>
-                                    <div class="submenu-description" data-i18n="submenu.for_students_desc">Все необходимое для учебы</div>
-                                </div>
-                            </div>
+                        <div class="desktop-submenu">
+                          <div class="submenu-column">
+                            <a href="/community/history/" class="submenu-item">История</a>
+                            <a href="/community/structure/" class="submenu-item">Организационная структура</a>
+                            <a href="/community/founding-docs/" class="submenu-item">Учредительные документы</a>
+                            <a href="/community/news/" class="submenu-item">Новости</a>
+                          </div>
+                          <div class="submenu-column right">
+                            <div class="submenu-title">О сообществе</div>
+                            <div class="submenu-description">Информация о сообществе и документах</div>
+                          </div>
                         </div>
-                        <div class="desktop-menu-item">
-                            <div class="menu-title-wrapper">
-                                <span data-i18n="menu.for_applicants">Абитуриенту</span>
-                            </div>
-                            <div class="desktop-submenu">
-                                <div class="submenu-column">
-                                    <a href="../../applicants/documentsList/" class="submenu-item" data-i18n="submenu.admission_rules">Перечень документов</a>
-                                    <a href="../../applicants/reveiveDocumentsPeriod/" class="submenu-item" data-i18n="submenu.open_days">Сроки приема документов</a>
-                                    <a href="../../applicants/openDoorDay/" class="submenu-item" data-i18n="submenu.open_door_day">Дни открытых дверей</a>
-                                    <a href="../../applicants/introductoryCampaign/" class="submenu-item" data-i18n="submenu.introductory_campaign">Вступительная компания</a>
-                                    <a href="../../students/disciplines/" class="submenu-item" data-i18n="submenu.courses">Учебные дисциплины</a>
-                                    <a href="../../students/hostel/" class="submenu-item" data-i18n="submenu.hostel">Общежитие</a>
-                                </div>
-                                <div class="submenu-column right">
-                                    <div class="submenu-title" data-i18n="submenu.for_applicants_title">Для абитуриентов</div>
-                                    <div class="submenu-description" data-i18n="submenu.for_applicants_desc">Всё о поступлении</div>
-                                </div>
-                            </div>
+                      </div>
+
+                      <!-- 2. Отделы -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <span>Отделы</span>
                         </div>
-                        <div class="desktop-menu-item">
-                            <div class="menu-title-wrapper">
-                                <span data-i18n="menu.science">Наука</span>
-                            </div>
-                            <div class="desktop-submenu">
-                                <div class="submenu-column">
-                                    <a href="../../science/science/" class="submenu-item" data-i18n="submenu.directions">Наука</a>
-                                </div>
-                                <div class="submenu-column right">
-                                    <div class="submenu-title" data-i18n="submenu.science_title">Научная деятельность</div>
-                                    <div class="submenu-description" data-i18n="submenu.science_desc">Исследования и разработки</div>
-                                </div>
-                            </div>
+                        <div class="desktop-submenu">
+                          <div class="submenu-column">
+                            <a href="/departments/info/" class="submenu-item">Информационный отдел</a>
+                            <a href="/departments/public-relations/" class="submenu-item">Отдел по работе с общественностью</a>
+                            <a href="/departments/international/" class="submenu-item">Международный отдел</a>
+                            <a href="/departments/labor/" class="submenu-item">Трудовой отдел</a>
+                            <a href="/departments/science/" class="submenu-item">Отдел по научной деятельности</a>
+                            <a href="/departments/military/" class="submenu-item">Военно-патриотический отдел</a>
+                            <a href="/departments/operations/" class="submenu-item">Хозяйственный отдел</a>
+                          </div>
+                          <div class="submenu-column right">
+                            <div class="submenu-title">Отделы сообщества</div>
+                            <div class="submenu-description">Структура и направления деятельности</div>
+                          </div>
                         </div>
-                        <div class="desktop-menu-item">
-                            <div class="menu-title-wrapper">
-                                <span data-i18n="menu.departments">Кафедры</span>
-                            </div>
-                            <div class="desktop-submenu">
-                                <div class="submenu-column">
-                                    <a href="../../departments/faculties/" class="submenu-item" data-i18n="submenu.economic_informatics">Кафедры</a>
-                                </div>
-                                <div class="submenu-column right">
-                                    <div class="submenu-title" data-i18n="submenu.departments_title">Наши кафедры</div>
-                                    <div class="submenu-description" data-i18n="submenu.departments_desc">Профессиональное образование</div>
-                                </div>
-                            </div>
+                      </div>
+
+                      <!-- 3. Выпускникам -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <span>Выпускникам</span>
                         </div>
-                        <div class="language-switcher">
-                            <div class="desktop-language-icon" id="desktopLanguageIcon"></div>
-                            <div class="language-dropdown" id="languageDropdown">
-                                <div class="language-dropdown-content">
-                                    <div class="language-dropdown-item active" data-lang="ru">Рус 🇷🇺</div>
-                                    <div class="language-dropdown-item" data-lang="be">Бел 🇧🇾</div>
-                                    <div class="language-dropdown-item" data-lang="en">En 🇬🇧</div>
-                                    <div class="language-dropdown-item" data-lang="zh">Ch 🇨🇳</div>
-                                </div>
-                            </div>
+                        <div class="desktop-submenu">
+                          <div class="submenu-column">
+                            <a href="/alumni/form/" class="submenu-item">Анкета выпускника</a>
+                            <a href="/alumni/day/" class="submenu-item">День выпускника</a>
+                            <a href="/alumni/cooperation/" class="submenu-item">Сотрудничество</a>
+                          </div>
+                          <div class="submenu-column right">
+                            <div class="submenu-title">Для выпускников</div>
+                            <div class="submenu-description">Участие, мероприятия и партнерство</div>
+                          </div>
                         </div>
+                      </div>
+
+                      <!-- 4. Контакты -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <a href="/contacts/" style="color:inherit;text-decoration:none;">Контакты</a>
+                        </div>
+                      </div>
+
+                      <div class="language-switcher">
+                        <div class="desktop-language-icon" id="desktopLanguageIcon"></div>
+                        <div class="language-dropdown" id="languageDropdown">
+                          <div class="language-dropdown-content">
+                            <div class="language-dropdown-item active" data-lang="ru">Рус 🇷🇺</div>
+                            <div class="language-dropdown-item" data-lang="be">Бел 🇧🇾</div>
+                            <div class="language-dropdown-item" data-lang="en">En 🇬🇧</div>
+                            <div class="language-dropdown-item" data-lang="zh">Ch 🇨🇳</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
