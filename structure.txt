@@ -1,0 +1,26 @@
+Вот соответствие страниц разделам:
+
+### 1. О сообществе:
+- 1.1. История — /community/history/index.html
+- 1.2. Организационная структура — /community/structure/index.html
+- 1.3. Учредительные документы — /community/founding-docs/index.html
+- 1.4. Новости — /community/news/index.html
+
+### 2. Отделы:
+- 2.1. Информационный отдел — /departments/info/index.html
+- 2.2. Отдел по работе с общественностью — /departments/public-relations/index.html
+- 2.3. Международный отдел — /departments/international/index.html
+- 2.4. Трудовой отдел — /departments/labor/index.html
+- 2.5. Отдел по научной деятельности — /departments/science/index.html
+- 2.6. Военно-патриотический отдел — /departments/military/index.html
+- 2.7. Хозяйственный отдел — /departments/operations/index.html
+
+### 3. Выпускникам:
+- 3.1. Анкета выпускника — /alumni/form/index.html
+- 3.2. День выпускника — /alumni/day/index.html
+- 3.3. Сотрудничество — /alumni/cooperation/index.html
+
+### 4. Контакты:
+- /contacts/index.html
+
+Таким образом каждому разделу и подразделу соответствует своя конкретная HTML-страница в указанной структуре каталогов.
