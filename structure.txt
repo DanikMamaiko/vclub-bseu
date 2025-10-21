@@ -1,6 +1,6 @@
 Вот соответствие страниц разделам:
 
-### 1. О сообществе:
+### 1. Клуб выпускников БГЭУ:
 - 1.1. История — /community/history/index.html
 - 1.2. Организационная структура — /community/structure/index.html
 - 1.3. Учредительные документы — /community/founding-docs/index.html
