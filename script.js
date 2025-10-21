@@ -1,6 +1,6 @@
 // Конфигурация Google Sheets
-const SHEET_ID = "1-j3eXzrevdn5KSf0SCFeSsdMu1athvjH9WfSBY9F5UQ";
-const API_KEY = "AIzaSyBUhb0WZJP5J4XvgYshB31SrVenUdBm6go";
+const SHEET_ID = "1uLyuqP1LsV0mImR62F7AUmwcTHYiJT-PgkFQbZt_Ns0";
+const API_KEY = "AIzaSyBLJfAZN9c0u3yOah6geQCkb5u0shRbIYU";
 const RANGE = "A1:E";
 const MAX_NEWS_COUNT = 5;
 
