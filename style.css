@@ -162,6 +162,8 @@ html, body {
         padding: 10px 0;
         transition: color 0.2s;
         white-space: normal;
+        background: transparent;
+        border: none; 
     }
 
     .desktop-menu a:hover {
@@ -227,7 +229,7 @@ html, body {
     .submenu-description {
         color: #565656;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 14.19px;
         margin-top: 5px;
         white-space: normal;
@@ -986,7 +988,7 @@ html, body {
 }
 
 .footer-column-1 p {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     text-decoration: none;
     color: white;
@@ -1005,7 +1007,7 @@ html, body {
     margin-top: 0;
     margin-bottom: 30px;
     display: block;
-    font-weight: 400;
+    font-weight: 500;
     color: #FFF;
     font-family: Ubuntu;
     font-size: 18px;
@@ -1018,7 +1020,7 @@ html, body {
 .footer-column-2 a {
     margin-bottom: 27px;
     display: block;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     text-decoration: none;
     color: white;
@@ -1043,7 +1045,7 @@ html, body {
 .footer-column-3 p {
     margin-top: 0;
     margin-bottom: 27px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -1057,7 +1059,7 @@ html, body {
     font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 101.336%;
     letter-spacing: -0.66px;
 }
