@@ -103,7 +103,7 @@ body {
     }
 
     .desktop-menu-item:nth-last-child(4) .desktop-submenu{
-        height: 370px!important;
+        height: 470px!important;
     } 
     
 
@@ -144,7 +144,7 @@ body {
         line-height: 101.336%; /* 20.267px */
         letter-spacing: -0.6px;
     }
-
+.language-switcher, .language-switcher-container { display: none !important; }
     .desktop-submenu {
         position: absolute;
         top: calc(100% + 15px);

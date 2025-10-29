@@ -16,7 +16,7 @@ body {
     position: absolute;
     z-index: 100;
 }
-
+.language-switcher, .language-switcher-container { display: none !important; }
 /* ================= HEADER DESKTOP VERSION ================= */
 @media (min-width: 1000px) {
     .container-header {
@@ -101,7 +101,7 @@ body {
     }
 
     .desktop-menu-item:nth-last-child(4) .desktop-submenu{
-        height: 370px!important;
+        height: 470px!important;
     } 
     
 
