@@ -14,7 +14,7 @@ body {
     position: absolute;
     z-index: 100;
 }
-
+.language-switcher, .language-switcher-container { display: none !important; }
 /* ================= HEADER DESKTOP VERSION ================= */
 @media (min-width: 1000px) {
     .container-header {

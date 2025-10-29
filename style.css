@@ -1383,6 +1383,15 @@ html, body {
     }
 }
 
+.language-switcher, .language-switcher-container { display: none !important; }
 
+.desktop-header-wrapper.header-bg .desktop-logo {
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 0 0 2px #fff;
+}
 
-
+.desktop-header-wrapper.header-bg .desktop-logo {
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.9));
+}
