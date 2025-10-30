@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Карта сайта - Клуб выпускников БГЭУ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="discipline-style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header-background"></div>
+        <div class="mobile-header">
+            <a href="../"><img src="images/logo.png" alt="Логотип" class="logo mobile-logo"></a>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Боковое меню -->
+            <div class="side-menu">
+              <!-- 1. О сообществе -->
+              <div class="menu-item">
+                <div class="menu-title">О сообществе
+                  <div class="arrow"></div>
+                </div>
+                <div class="submenu">
+                  <a href="/community/history/">История</a>
+                  <a href="/community/structure/">Организационная структура</a>
+                  <a href="/community/founding-docs/">Учредительные документы</a>
+                  <a href="/allnews/">Новости</a>
+                </div>
+              </div>
+
+              <!-- 2. Отделы -->
+              <div class="menu-item">
+                <div class="menu-title">Отделы
+                  <div class="arrow"></div>
+                </div>
+                <div class="submenu">
+                  <a href="/departments/info/">Информационный отдел</a>
+                  <a href="/departments/public-relations/">Отдел по работе с общественностью</a>
+                  <a href="/departments/international/">Международный отдел</a>
+                  <a href="/departments/labor/">Трудовой отдел</a>
+                  <a href="/departments/science/">Отдел по научной деятельности</a>
+                  <a href="/departments/military/">Военно-патриотический отдел</a>
+                  <a href="/departments/operations/">Хозяйственный отдел</a>
+                </div>
+              </div>
+
+              <!-- 3. Выпускникам -->
+              <div class="menu-item">
+                <div class="menu-title">Выпускникам
+                  <div class="arrow"></div>
+                </div>
+                <div class="submenu">
+                  <a href="/alumni/form/">Анкета выпускника</a>
+                  <a href="/alumni/day/">День выпускника</a>
+                  <a href="/alumni/cooperation/">Сотрудничество</a>
+                </div>
+              </div>
+
+              <!-- 4. Контакты -->
+              <div class="menu-item">
+                <div class="menu-title"><a href="/contacts/" style="display:block;color:inherit;text-decoration:none;">Контакты</a></div>
+              </div>
+
+              <div class="language-switcher-container">
+                <img src="../images/languageicon.png" alt="" class="mobile-language-icon" id="mobileLanguageIcon">
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="container-header">
+            <div class="desktop-header-wrapper">
+                <div class="desktop-header-container">
+                    <a href="../"><img src="images/logo.png" alt="Логотип" class="logo desktop-logo"></a>
+                    <div class="desktop-menu">
+                      <!-- 1. О сообществе -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <span>О сообществе</span>
+                        </div>
+                        <div class="desktop-submenu">
+                          <div class="submenu-column">
+                            <a href="/community/history/" class="submenu-item">История</a>
+                            <a href="/community/structure/" class="submenu-item">Организационная структура</a>
+                            <a href="/community/founding-docs/" class="submenu-item">Учредительные документы</a>
+                            <a href="/allnews/" class="submenu-item">Новости</a>
+                          </div>
+                          <div class="submenu-column right">
+                            <div class="submenu-title">О сообществе</div>
+                            <div class="submenu-description">Информация о сообществе и документах</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 2. Отделы -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <span>Отделы</span>
+                        </div>
+                        <div class="desktop-submenu">
+                          <div class="submenu-column">
+                            <a href="/departments/info/" class="submenu-item">Информационный отдел</a>
+                            <a href="/departments/public-relations/" class="submenu-item">Отдел по работе с общественностью</a>
+                            <a href="/departments/international/" class="submenu-item">Международный отдел</a>
+                            <a href="/departments/labor/" class="submenu-item">Трудовой отдел</a>
+                            <a href="/departments/science/" class="submenu-item">Отдел по научной деятельности</a>
+                            <a href="/departments/military/" class="submenu-item">Военно-патриотический отдел</a>
+                            <a href="/departments/operations/" class="submenu-item">Хозяйственный отдел</a>
+                          </div>
+                          <div class="submenu-column right">
+                            <div class="submenu-title">Отделы сообщества</div>
+                            <div class="submenu-description">Структура и направления деятельности</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 3. Выпускникам -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <span>Выпускникам</span>
+                        </div>
+                        <div class="desktop-submenu">
+                          <div class="submenu-column">
+                            <a href="/alumni/form/" class="submenu-item">Анкета выпускника</a>
+                            <a href="/alumni/day/" class="submenu-item">День выпускника</a>
+                            <a href="/alumni/cooperation/" class="submenu-item">Сотрудничество</a>
+                          </div>
+                          <div class="submenu-column right">
+                            <div class="submenu-title">Для выпускников</div>
+                            <div class="submenu-description">Участие, мероприятия и партнерство</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 4. Контакты -->
+                      <div class="desktop-menu-item">
+                        <div class="menu-title-wrapper">
+                          <a href="/contacts/" style="color:inherit;text-decoration:none;">Контакты</a>
+                        </div>
+                      </div>
+
+                      <div class="language-switcher">
+                        <div class="desktop-language-icon" id="desktopLanguageIcon"></div>
+                        <div class="language-dropdown" id="languageDropdown">
+                          <div class="language-dropdown-content">
+                            <div class="language-dropdown-item active" data-lang="ru">Рус 🇷🇺</div>
+                            <div class="language-dropdown-item" data-lang="be">Бел 🇧🇾</div>
+                            <div class="language-dropdown-item" data-lang="en">En 🇬🇧</div>
+                            <div class="language-dropdown-item" data-lang="zh">Ch 🇨🇳</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner-container">
+            <div class="sitemap-header">
+                <h1>Карта сайта</h1>
+                <p class="sitemap-description">Навигация по разделам сайта Клуба выпускников БГЭУ</p>
+            </div>
+
+            <div class="sitemap-grid">
+                <section class="sitemap-card">
+                    <h2>Клуб выпускников БГЭУ</h2>
+                    <ul class="sitemap-links">
+                        <li><a href="/community/history/">История</a></li>
+                        <li><a href="/community/structure/">Организационная структура</a></li>
+                        <li><a href="/community/founding-docs/">Учредительные документы</a></li>
+                        <li><a href="/allnews/">Новости</a></li>
+                    </ul>
+                </section>
+
+                <section class="sitemap-card">
+                    <h2>Отделы</h2>
+                    <ul class="sitemap-links">
+                        <li><a href="/departments/info/">Информационный отдел</a></li>
+                        <li><a href="/departments/public-relations/">Отдел по работе с общественностью</a></li>
+                        <li><a href="/departments/international/">Международный отдел</a></li>
+                        <li><a href="/departments/labor/">Трудовой отдел</a></li>
+                        <li><a href="/departments/science/">Отдел по научной деятельности</a></li>
+                        <li><a href="/departments/military/">Военно-патриотический отдел</a></li>
+                        <li><a href="/departments/operations/">Хозяйственный отдел</a></li>
+                    </ul>
+                </section>
+
+                <section class="sitemap-card">
+                    <h2>Выпускникам</h2>
+                    <ul class="sitemap-links">
+                        <li><a href="/alumni/form/">Анкета выпускника</a></li>
+                        <li><a href="/alumni/day/">День выпускника</a></li>
+                        <li><a href="/alumni/cooperation/">Сотрудничество</a></li>
+                    </ul>
+                </section>
+
+                <section class="sitemap-card contact-card">
+                    <h2>Контакты</h2>
+                    <div class="contact-info">
+                        <p>По всем вопросам обращайтесь в раздел контактов</p>
+                        <a href="/contacts/" class="contact-button">Перейти в контакты</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+              <div class="footer-content">
+                <div class="footer-column-1">
+                  <div class="footer-column">
+                    <p><span class="underlined" data-i18n="footer.questions">Если у Вас возникли вопросы, обращайтесь по адресу</span> <strong>vypusk.club.bseu@gmail.com</strong></p>
+                    <div style="width: 186px; height: 181px; background: white; margin: 27px 0 27px 0;">
+                      <img src="../qr.svg" alt="QR код" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <p data-i18n="footer.suggestions">Если есть предложения, можете написать нам</p>
+                  </div>
+                </div>
+      
+                <div class="footer-column-2">
+                  <div class="footer-column">
+                    <p data-i18n="menu.links">Ссылки</p>
+                    <a href="/community/structure/">Организационная структура</a>
+                    <a href="/community/history/">История</a>
+                    <a href="/community/founding-docs/">Учредительные документы</a>
+                    <a href="/alumni/day/">День выпускника</a>
+                    <a href="/alumni/cooperation/">Сотрудничество</a>
+                    <a href="/map/">Карта сайта</a>
+                  </div>
+                </div>
+      
+                <div class="footer-column-3">
+                  <div class="footer-column">
+                    <h3>
+                      <a href="footer/contacts/" style="text-decoration: none; color: inherit;" data-i18n="footer.contacts">
+                        Контакты
+                      </a>
+                    </h3>
+                    <p>+375 (29) 611-28-00</p>
+                    <p>vypusk.club.bseu@gmail.com</p>
+                    <p>г. Минск, пр. Партизанский, 26 а, кб 103</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">© ОО "Клуб выпускников БГЭУ"</div>
+            </div>
+        </div>
+      
+        </div>
+
+    </div>
+
+    <script src="discipline.js"></script>
+</body>
+
+</html>
