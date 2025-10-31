@@ -7,13 +7,14 @@
 - 1.4. Новости — /allnews/index.html
 
 ### 2. Отделы:
-- 2.1. Информационный отдел — /departments/info/index.html
-- 2.2. Отдел по работе с общественностью — /departments/public-relations/index.html
-- 2.3. Международный отдел — /departments/international/index.html
-- 2.4. Трудовой отдел — /departments/labor/index.html
-- 2.5. Отдел по научной деятельности — /departments/science/index.html
-- 2.6. Военно-патриотический отдел — /departments/military/index.html
-- 2.7. Хозяйственный отдел — /departments/operations/index.html
+- 2.1. Общий отдел — /departments/general/index.html
+- 2.2. Информационный отдел — /departments/info/index.html
+- 2.3. Отдел по работе с общественностью — /departments/public-relations/index.html
+- 2.4. Международный отдел — /departments/international/index.html
+- 2.5. Трудовой отдел — /departments/labor/index.html
+- 2.6. Отдел по научной деятельности — /departments/science/index.html
+- 2.7. Военно-патриотический отдел — /departments/military/index.html
+- 2.8. Хозяйственный отдел — /departments/operations/index.html
 
 ### 3. Выпускникам:
 - 3.1. Анкета выпускника — /alumni/form/index.html
