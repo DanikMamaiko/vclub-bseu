@@ -3,11 +3,16 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html, body { height: 100%; }
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    min-height: 100%;
 }
+/* Make the page fill the viewport and push footer to the bottom */
+.container { min-height: 100vh; display: flex; flex-direction: column; }
+.footer { margin-top: auto; }
 
 .logo {
     position: absolute;
@@ -289,7 +294,10 @@ body {
     width: 100%;
     margin: 0 auto;
     flex: 1;
-    margin-top: 209px;
+    margin-top: 140px;
+}
+@media (max-width: 999px) {
+  .inner-container { margin-top: 110px; }
 }
 
 .discipline-text p {
@@ -323,6 +331,51 @@ body {
     letter-spacing: -0.66px;
 }
 
+/* CTA + Modal (reuse style from alumni/form) */
+.cta-wrapper { margin-top: 24px; display: flex; justify-content: center; }
+.cta-btn {
+  background: linear-gradient(97deg, #479937 0.78%, #071f02 99.22%);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(71, 153, 55, 0.35);
+  transition: transform .12s ease, box-shadow .2s ease, opacity .2s ease;
+}
+.cta-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(71,153,55,.35); opacity: .95; }
+.cta-btn:active { transform: translateY(0); box-shadow: 0 6px 14px rgba(71,153,55,.3); }
+
+/* Inline card for Day form */
+.form-card { margin: 24px auto; max-width: 940px; background: #f3fbf1; border: 1px solid #cfe8c9; border-radius: 16px; padding: 22px; box-shadow: 0 6px 18px rgba(0,0,0,.06); transition: box-shadow .2s ease, transform .12s ease; }
+.form-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,.12); transform: translateY(-1px); }
+.form-card-header { font-size: 24px; font-weight: 700; text-align: center; margin-bottom: 14px; color: #479937; }
+
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
+.modal-overlay.active { display: flex; }
+.modal { width: 100%; max-width: 720px; background: #fff; border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.25); overflow: hidden; }
+.modal-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; background: #f6fbf5; border-bottom: 1px solid #e8efe6; }
+.modal-title { font-size: 22px; font-weight: 600; color: #2E3146; }
+.modal-close { background: transparent; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: #2E3146; }
+.modal-body { padding: 20px; max-height: 75vh; overflow: auto; }
+
+.form-row { display: flex; flex-direction: column; margin-bottom: 14px; }
+.form-row label { margin-bottom: 6px; font-size: 16px; color: #2E3146; font-weight: 500; }
+.field-hint { margin-top: -2px; margin-bottom: 8px; color: #6b7280; font-size: 14px; }
+
+.form-row textarea { width: 100%; padding: 12px 14px; border: 1px solid #dbe7d7; border-radius: 10px; background: #fff; font-size: 16px; outline: none; transition: border-color .15s ease, box-shadow .15s ease; }
+.form-row textarea:focus { border-color: #479937; box-shadow: 0 0 0 3px rgba(71,153,55,.15); }
+
+/* Full-width submit */
+.modal-actions { display: block; margin-top: 12px; }
+.submit-btn { display: block; width: 100%; background: #479937; color: #fff; border: none; padding: 14px 18px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; }
+.secondary-btn { background: #eef5ec; color: #2E3146; border: none; padding: 12px 18px; border-radius: 10px; font-size: 16px; cursor: pointer; }
+.submit-btn:hover { filter: brightness(.95); }
+.secondary-btn:hover { filter: brightness(.97); }
+
+@media (max-width: 599px) { .modal { max-width: 100%; border-radius: 12px; } .modal-title { font-size: 18px; } }
 
 
 /* ================= FOOTER DESKTOP ================= */
