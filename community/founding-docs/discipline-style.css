@@ -323,7 +323,106 @@ body {
     letter-spacing: -0.66px;
 }
 
+/* ================= FOUNDING DOCUMENTS PAGE STYLES ================= */
+.docs-title h1 {
+    color: #2E3146;
+    font-family: Ubuntu;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 101.336%;
+    letter-spacing: -1.56px;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
+.docs-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.document-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.document-name {
+    color: #2E3146;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 101.336%;
+    letter-spacing: -0.96px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.pdf-preview {
+    width: 100%;
+    max-width: 700px;
+    height: 900px;
+    margin-bottom: 30px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pdf-preview embed {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.download-button {
+    background: #479937;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(71, 153, 55, 0.3);
+}
+
+.download-button:hover {
+    background: #3d8530;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(71, 153, 55, 0.4);
+}
+
+.download-button svg {
+    flex-shrink: 0;
+}
+
+.file-info {
+    color: #666;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
 
 /* ================= FOOTER DESKTOP ================= */
 .footer {
@@ -691,6 +790,39 @@ body {
     .discipline-text {
         word-break: break-word; /* Перенос длинных слов */
         hyphens: auto; /* Автоматическая расстановка переносов */
+    }
+
+    /* Founding documents mobile styles */
+    .docs-title h1 {
+        font-size: 32px;
+        letter-spacing: -0.96px;
+        margin-bottom: 30px;
+    }
+
+    .document-card {
+        padding: 20px;
+    }
+
+    .document-name {
+        font-size: 24px;
+        letter-spacing: -0.72px;
+        margin-bottom: 20px;
+    }
+
+    .pdf-preview {
+        height: 600px;
+        margin-bottom: 20px;
+    }
+
+    .download-button {
+        font-size: 16px;
+        padding: 12px 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .file-info {
+        font-size: 12px;
     }
 }
 
