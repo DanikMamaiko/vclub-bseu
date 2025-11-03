@@ -682,36 +682,36 @@ body {
 /* ================= CONTENT MOBILE VERSION ================= */
 @media (max-width: 999px) {
     .inner-container {
-        margin-top: 120px;
+        margin-top: 96px;
         padding: 0;
         width: 100%;
     }
 
-    .page-box { padding: 56px 16px; border-radius: 16px; }
-    .legal-address { font-size: 30px; }
-    .legal-email { font-size: 24px; }
-    .legal-note { font-size: 14px; }
+    .page-box { padding: 24px 20px; border-radius: 0px; }
+    .legal-sub { font-size: 12px; margin-bottom: 6px; }
+    .legal-address { font-size: 18px; line-height: 1.2; margin-bottom: 6px; }
+    .legal-email-label { font-size: 13px; margin: 4px 0 3px; }
+    .legal-email { font-size: 16px; }
+    .legal-note { font-size: 11px; }
 
     .discipline-text {
-        letter-spacing: -0.4px;
-        line-height: 1.4;
         color: #2E3146;
         font-family: Ubuntu;
-        font-size: 18px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
-        line-height: 101.336%; /* 22.294px */
-        letter-spacing: -0.66px;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
     }
 
     .discipline-text p {
         color: #2E3146; 
         font-family: Ubuntu, sans-serif; 
-        font-size: 18px; 
+        font-size: 15px; 
         font-style: normal; 
         font-weight: 400; 
         line-height: 1.4;
-        letter-spacing: -0.66px; 
+        letter-spacing: -0.4px; 
         text-align: left; 
     }
 
@@ -721,6 +721,10 @@ body {
         word-break: break-word; /* Перенос длинных слов */
         hyphens: auto; /* Автоматическая расстановка переносов */
     }
+
+    /* Скрыть QR-код блока в футере на мобильных */
+    .footer-column-1 div[style*="background: white"] { display: none !important; }
+    .qr-code { display: none !important; }
 }
 
 /* ================= FOOTER MOBILE VERSION ================= */

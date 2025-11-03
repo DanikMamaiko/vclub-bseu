@@ -337,8 +337,12 @@ html, body {
     .mobile-logo {
         left: 10px;
         top: 7px;
-        width: 70px;
+        width: 60px;
         height: 60px;
+        background: #fff;
+        border-radius: 50%;
+        padding: 0px;
+        box-shadow: 0 0 0 2px #fff;
     }
 
     .burger-menu {
@@ -353,6 +357,11 @@ html, body {
         z-index: 1000;
         cursor: pointer;
         transition: transform 0.3s ease;
+        background: #fff;
+        border-radius: 20%;
+        padding: 5px;
+        box-shadow: 0 0 0 2px #fff;
+        box-sizing: content-box;
     }
 
     .burger-menu div {
