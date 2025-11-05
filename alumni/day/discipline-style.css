@@ -853,3 +853,8 @@ body {
     display: inline; 
 }
 }
+
+.highlight {
+    font-weight: bold;
+    color: black;
+  }

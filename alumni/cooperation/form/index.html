@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Сотрудничество — Форма</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../discipline-style.css">
+  <style>
+    .form-wrapper{max-width:720px;margin:40px auto;padding:20px}
+    .form-title{font-size:26px;font-weight:600;margin:0 0 24px 0;color:#2E3146}
+    .form-group{margin:18px 0}
+    .form-label{display:block;margin-bottom:6px;font-weight:500;color:#2E3146}
+    .form-input{width:100%;padding:12px 14px;border:1px solid #E6F0FA;border-radius:8px;font-size:16px;min-height:44px}
+    .form-hint{margin-top:2px;color:#6A6A6A;font-size:13px;line-height:1.35}
+    .form-actions{margin-top:24px;display:flex;align-items:center;justify-content:space-between}
+    .actions-left{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1}
+    .actions-right{margin-left:16px;white-space:nowrap;color:#2E3146}
+    .btn{display:inline-block;padding:12px 20px;background:#479937;color:#fff;text-decoration:none;border-radius:8px;border:1px solid #479937;cursor:pointer;font-size:16px;line-height:1.2;font-weight:500}
+    .btn-secondary{background:transparent;color:#479937;border:1px solid #479937}
+    .btn:hover{background:#3b7e2f;border-color:#3b7e2f}
+    .btn-secondary:hover{background:#c3e7bc33}
+    .form-input:focus{outline:none;border-color:#479937;box-shadow:0 0 0 3px rgba(71,153,55,0.15)}
+    .actions-left .btn{width:100%;text-align:center}
+    .checkbox-label{display:flex;align-items:flex-start;gap:10px;font-weight:400}
+    .checkbox-input{margin-top:2px}
+    .checkbox-text{display:flex;flex-direction:column;gap:2px}
+    .checkbox-text .form-hint{margin-top:2px}
+    a{color:#479937;text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner-container">
+      <div class="form-wrapper">
+        <div class="form-title">Сотрудничество</div>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="benefactorFullName" class="form-label">ФИО благотворителя</label>
+            <input type="text" id="benefactorFullName" name="benefactorFullName" class="form-input" placeholder="Введите ФИО благотворителя">
+            <div class="form-hint">Фамилия имя отчество</div>
+          </div>
+          <div class="form-group">
+            <label for="amount" class="form-label">Сумма</label>
+            <input type="number" id="amount" name="amount" class="form-input" placeholder="Сумма">
+            <div class="form-hint">Введите сумму платежа</div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Электронная почта</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Электронная почта">
+            <div class="form-hint">Введите вашу электронную почту</div>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+375 XX XXX XX XX">
+            <div class="form-hint">Введите ваш номер телефона в формате +375 XX XXX XX XX</div>
+          </div>
+          <div class="form-group">
+            <label for="purpose" class="form-label">Назначение платежа</label>
+            <input type="text" id="purpose" name="purpose" class="form-input" placeholder="Назначение платежа">
+            <div class="form-hint">Введите назначение платежа</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label checkbox-label" for="offerAgree">
+              <input type="checkbox" id="offerAgree" name="offerAgree" class="checkbox-input" required>
+              <span class="checkbox-text">
+                <span>Подтверждаю, что согласен и ознакомлен с <a href="#" target="_blank" rel="noopener">Публичная оферта с добровольным пожертвованием денежных средств</a></span>
+                <span class="form-hint">подтвердите согласие с условием оферты</span>
+              </span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-label checkbox-label" for="paymentAgree">
+              <input type="checkbox" id="paymentAgree" name="paymentAgree" class="checkbox-input" required>
+              <span class="checkbox-text">
+                <span>С <a href="#" target="_blank" rel="noopener">правилами оплаты</a> согласен</span>
+                <span class="form-hint">Подтвердите согласие с правилами оплаты</span>
+              </span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-label checkbox-label" for="personalDataAgree">
+              <input type="checkbox" id="personalDataAgree" name="personalDataAgree" class="checkbox-input" required>
+              <span class="checkbox-text">
+                <span>Согласен на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года Nº152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a href="#" target="_blank" rel="noopener">Согласие на обработку персональных данных</a></span>
+                <span class="form-hint">Подтвердите согласие на обработку персональных данных</span>
+              </span>
+            </label>
+          </div>
+          <div class="form-actions">
+            <div class="actions-left">
+              <button type="submit" class="btn">Оплатить</button>
+              <a href="/alumni/cooperation/" class="btn btn-secondary">Назад</a>
+            </div>
+            <div class="actions-right">
+              <span class="amount-label">Сумма к оплате: </span>
+              <span id="amountDisplay" class="amount-value">0 BYN</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var amountInput = document.getElementById('amount');
+      var amountOut = document.getElementById('amountDisplay');
+      if(!amountInput || !amountOut) return;
+      var formatter;
+      try {
+        formatter = new Intl.NumberFormat('ru-BY', {style:'currency', currency:'BYN', maximumFractionDigits:2});
+      } catch(e) {
+        formatter = null;
+      }
+      function formatBYN(v){
+        if (formatter) return formatter.format(v || 0);
+        return String((v || 0).toFixed ? v.toFixed(2) : Number(v||0).toFixed(2)) + ' BYN';
+      }
+      function update(){
+        var raw = (amountInput.value || '').replace(',', '.');
+        var val = parseFloat(raw);
+        if (!isNaN(val) && val > 0) {
+          amountOut.textContent = formatBYN(val);
+        } else {
+          amountOut.textContent = formatBYN(0);
+        }
+      }
+      amountInput.addEventListener('input', update);
+      update();
+    })();
+  </script>
+</body>
+</html>
