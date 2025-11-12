@@ -393,7 +393,7 @@ html, body {
         height: 100vh;
         background: #FFFFFF;
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-        z-index: 999;
+        z-index: 1100;
         transition: right 0.3s ease;
         padding: 80px 0 20px;
     }
@@ -502,7 +502,7 @@ html, body {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        z-index: 998;
+        z-index: 1090;
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
@@ -1079,6 +1079,23 @@ html, body {
 
 /* ================= FOOTER MOBILE VERSION ================= */
 @media (max-width: 1220px) {
+    /* Make header background image fully visible and without gaps */
+    .header-bg {
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        min-height: 360px;
+    }
+
+    /* On the home page, allow the header section to scroll and be tall */
+    .mobile-header.header-bg {
+        position: relative;
+        height: auto;
+        min-height: 420px;
+        padding-top: 75px; /* space for the fixed top bar */
+        padding-bottom: 40px; /* extra space below header text */
+    }
     .footer-column-1 div[style="width: 186px; height: 181px; background: white; margin: 27px 0 27px 0;"],
     .footer-column-1 p[data-i18n="footer.suggestions"] {
         display: none;
@@ -1192,7 +1209,7 @@ html, body {
     width: calc(100% - 40px); /* учитываем padding */
     position: absolute;
     left: 50%;
-    top: 150px;
+    top: 90px;
     transform: translateX(-50%);
     color: white;
     font-size: 32px;
@@ -1207,6 +1224,11 @@ html, body {
 }
 
 @media (max-width: 400px) {
+    .header-bg,
+    .mobile-header.header-bg { min-height: 380px; }
+    .header-text-container { top: 110px; }
+    .header-title { font-size: 28px; }
+    .header-subtitle { font-size: 14px; }
     .mobile-header-text {
         width: 90%;
         font-size: 28px;
@@ -1257,9 +1279,41 @@ html, body {
 }
 
 @media (max-width: 1220px) {
-    .header-text-container { display: none; }
-    .header-title { display: none; }
-    .header-subtitle { display: none; }
+    /* Show header text on mobile/tablet */
+    .header-text-container {
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+    .header-title {
+        display: block;
+        margin: 0 0 6px 0;
+        color: #FFF;
+        font-family: Ubuntu;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.6px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .header-subtitle {
+        display: block;
+        margin: 0;
+        color: #FFF;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.3px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
 
     .footer-column-1 div[style*="background: white"] {
         display: none !important;
