@@ -79,22 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize news
     fetchNews();
     toggleVersions();
-    
-    // Setup scroll buttons
-    const setupScrollButton = (buttonId) => {
-        const button = document.getElementById(buttonId);
-        if (button) {
-            window.addEventListener("scroll", () => {
-                button.classList.toggle("visible", window.scrollY > 100);
-            });
-            button.addEventListener("click", () => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-        }
-    };
-    
-    setupScrollButton("upArrow");
-    setupScrollButton("upArrowDesktop");
     window.addEventListener("resize", toggleVersions);
 
     // Initial Russian version

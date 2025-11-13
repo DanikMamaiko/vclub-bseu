@@ -588,21 +588,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Инициализация новостей
   fetchNews();
   toggleVersions();
-
-  const setupScrollButton = (buttonId) => {
-    const button = document.getElementById(buttonId);
-    if (button) {
-      window.addEventListener("scroll", () => {
-        button.classList.toggle("visible", window.scrollY > 100);
-      });
-      button.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    }
-  };
-
-  setupScrollButton("upArrow");
-  setupScrollButton("upArrowDesktop");
   window.addEventListener("resize", toggleVersions);
 
   // Начальная загрузка русской версии
