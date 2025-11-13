@@ -66,7 +66,7 @@ const translations = {
     "footer.address":
       "220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 1205",
     "footer.copyright": "© 2019-2025 БГЭУ ФЦЭ",
-    "submenu.faculty_title_main": "Клуб выпускников БГЭУ",
+    "submenu.faculty_title_main": "Сообщество выпускников экономического университета",
     "header.subtitle": "Наше прошлое, настоящее и будушее",
   },
   be: {

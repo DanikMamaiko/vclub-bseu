@@ -49,7 +49,7 @@ const translations = {
     "sitemap.contacts": "Контакты",
     "sitemap.student": "Студенту",
     "sitemap.schedule": "Расписание",
-    "sitemap.disciplines": "Клуб выпускников БГЭУ",
+    "sitemap.disciplines": "Сообщество выпускников экономического университета "Нархоз"",
     "sitemap.forms": "Бланки заявлений",
     "sitemap.portal": "Образовательный портал",
     "sitemap.departments": "Кафедры",
