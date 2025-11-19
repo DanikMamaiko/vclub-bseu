@@ -452,6 +452,48 @@ document.addEventListener("DOMContentLoaded", function () {
   if (openBtn) openBtn.addEventListener("click", openModal);
   if (modalClose) modalClose.addEventListener("click", closeModal);
   if (cancelBtn) cancelBtn.addEventListener("click", closeModal);
+
+  // Handle form submission for day form
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Collect form data
+      const formData = new FormData(form);
+      let emailBody = 'Новые пожелания на День выпускника:\n\n';
+      
+      // Add all form fields to email body with proper labels
+      const fieldLabels = {
+        'wishes': 'Пожелания и идеи',
+        'invite': 'Кого пригласить',
+        'fio': 'ФИО, факультет и год выпуска'
+      };
+      
+      for (let [key, value] of formData.entries()) {
+        if (value.trim() === '') continue; // Skip empty fields
+        const displayName = fieldLabels[key] || key;
+        emailBody += `**${displayName}**:\n${value}\n\n`;
+      }
+      
+      // Create mailto link
+      const email = 'alumniclub.bseu@gmail.com';
+      const subject = 'Пожелания на День выпускника';
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      alert('Спасибо за ваши пожелания! Откройте вашу почтовую программу для отправки.');
+      
+      // Close the modal if it's open
+      closeModal();
+      
+      // Reset the form
+      form.reset();
+    });
+  }
+
   if (modalOverlay) {
     modalOverlay.addEventListener("click", (e) => {
       if (e.target === modalOverlay) closeModal();
