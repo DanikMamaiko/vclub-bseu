@@ -455,6 +455,66 @@ document.addEventListener("DOMContentLoaded", function () {
   if (modalClose) modalClose.addEventListener("click", closeModal);
   if (cancelBtn) cancelBtn.addEventListener("click", closeModal);
 
+  // Handle form submission
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Collect form data
+      const formData = new FormData(form);
+      let emailBody = 'Новая анкета выпускника:\n\n';
+      
+      // Add all form fields to email body
+      for (let [key, value] of formData.entries()) {
+        if (key === 'photo') continue; // Skip file upload
+        if (key === 'consent') value = value ? 'Да' : 'Нет';
+        if (key === 'subscribe') value = value ? 'Да' : 'Нет';
+        if (key === 'active_member') value = value ? 'Да' : 'Нет';
+        
+        // Format the field name for display
+        const fieldNames = {
+          'full_name': 'ФИО',
+          'study_name': 'Фамилия в период обучения',
+          'gender': 'Пол',
+          'birth_date': 'Дата рождения',
+          'faculty': 'Факультет',
+          'grad_year': 'Год окончания',
+          'current_city': 'Место проживания',
+          'current_job': 'Место работы',
+          'position': 'Должность',
+          'achievements': 'Достижения',
+          'family_alumni': 'Выпускники БГЭУ в семье',
+          'hobbies': 'Хобби и увлечения',
+          'email': 'Email',
+          'phone': 'Телефон',
+          'subscribe': 'Подписка на рассылку',
+          'active_member': 'Активное участие в сообществе',
+          'consent': 'Согласие на обработку данных'
+        };
+        
+        const displayName = fieldNames[key] || key;
+        emailBody += `${displayName}: ${value}\n`;
+      }
+      
+      // Create mailto link
+      const email = 'alumniclub.bseu@gmail.com';
+      const subject = 'Анкета выпускника БГЭУ';
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      alert('Спасибо! Откройте вашу почтовую программу для отправки анкеты.');
+      
+      // Close the modal if it's open
+      closeModal();
+      
+      // Reset the form
+      form.reset();
+    });
+  }
+
   if (modalOverlay) {
     modalOverlay.addEventListener("click", (e) => {
       if (e.target === modalOverlay) closeModal();
