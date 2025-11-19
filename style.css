@@ -56,7 +56,7 @@ html, body {
         margin: 0;
         box-sizing: border-box;
         font-family: 'Ubuntu', sans-serif;
-        min-height: 520px; /* make header background visually wider/taller */
+        min-height: 620px; /* make header background visually wider/taller */
     }
     .desktop-header-container {
         width: 1220px;
