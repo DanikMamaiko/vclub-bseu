@@ -102,7 +102,7 @@ body {
     }
 
     .desktop-menu-item:nth-last-child(4) .desktop-submenu{
-        height: 530px!important;
+        height: 470px!important;
     } 
     
 
@@ -300,7 +300,6 @@ body {
     margin-top: 10px;
 }
 
-
 .discipline-text p {
     color: #2E3146; 
     font-family: Ubuntu, sans-serif; 
@@ -309,7 +308,7 @@ body {
     font-weight: 400; 
     line-height: 1.4;
     letter-spacing: -0.66px; 
-    text-align: justify; 
+    text-align: left; 
 }
 
 .discipline-title {
@@ -332,8 +331,7 @@ body {
     letter-spacing: -0.66px;
 }
 
-/* Inline card form */
-.form-card {
+.form-card { 
   margin: 24px auto;
   max-width: 940px;
   background: #f3fbf1;
@@ -342,105 +340,32 @@ body {
   padding: 22px 22px 18px;
   box-shadow: 0 6px 18px rgba(0,0,0,.06);
   transition: box-shadow .2s ease, transform .12s ease;
-  justify-content: center;
-  align-items: center;
   display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 24px;
 }
 .form-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,.12); transform: translateY(-1px); }
-.form-card-header { font-size: 24px; font-weight: 700; text-align: center; margin-bottom: 14px; color: #479937; }
 
-/* keep legacy CTA styles unused (safe to keep) */
-.cta-wrapper { margin-top: 24px; display: none; justify-content: center; }
-.cta-btn { display:none; }
+.form-card-header {
+  flex: 0 0 220px;
+  color: #479937;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 
-.support-note { margin: 18px auto 0; max-width: 900px; background: #f8fcf7; border: 1px solid #e5f0e2; border-radius: 12px; padding: 16px 18px; }
-.support-note p { margin: 8px 0; font-size: 18px; line-height: 1.5; }
-.support-note a { color: #2E3146; text-decoration: underline; }
-a[href^="mailto:alumniclub.bseu@gmail.com"] { color: #479937; }
-a[href^="mailto:alumniclub.bseu@gmail.com"]:hover { text-decoration: underline; }
-
-.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
-.modal-overlay.active { display: flex; }
-.modal { width: 100%; max-width: 720px; background: #fff; border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,.25); overflow: hidden; }
-.modal-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; background: #f6fbf5; border-bottom: 1px solid #e8efe6; }
-.modal-title { font-size: 22px; font-weight: 600; color: #2E3146; }
-.modal-close { background: transparent; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: #2E3146; }
-.modal-body { padding: 20px; max-height: 75vh; overflow: auto; }
+.form-card form {
+  flex: 1 1 auto;
+}
 
 .form-row { display: flex; flex-direction: column; margin-bottom: 14px; }
-.form-row-inline { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
-.form-row label, .form-row-inline > label { margin-bottom: 6px; font-size: 16px; color: #2E3146; font-weight: 500; }
-
-.form-row input[type="text"],
-.form-row input[type="email"],
-.form-row input[type="tel"],
-.form-row input[type="number"],
-.form-row input[type="date"],
-.form-row textarea,
-.form-row select {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #dbe7d7;
-  border-radius: 10px;
-  background: #fff;
-  font-size: 16px;
-  outline: none;
-  transition: border-color .15s ease, box-shadow .15s ease;
-}
-.form-row select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23479937' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 36px;
-}
-.form-row input:focus, .form-row textarea:focus, .form-row select:focus { border-color: #479937; box-shadow: 0 0 0 3px rgba(71,153,55,.15); }
-
-.radio-group { display: flex; gap: 20px; }
-.radio { display: flex; align-items: center; gap: 8px; font-size: 16px; }
-.radio input[type="radio"] { accent-color: #479937; }
-
-/* green checkboxes */
-.check-group input[type="checkbox"],
-.form-row input[type="checkbox"] { accent-color: #479937; }
-
-.check-group .checkbox { display: block; margin-bottom: 8px; font-size: 15px; font-weight: 400; }
-.check-group .required { font-weight: 400; }
-
-.modal-actions { display: block; margin-top: 12px; }
-.submit-btn { display: block; width: 100%; background: #479937; color: #fff; border: none; padding: 14px 18px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; }
-.secondary-btn { background: #eef5ec; color: #2E3146; border: none; padding: 12px 18px; border-radius: 10px; font-size: 16px; cursor: pointer; }
-.submit-btn:hover { filter: brightness(.95); }
-.secondary-btn:hover { filter: brightness(.97); }
-
-.form-row input[type="file"]::-webkit-file-upload-button {
-  background: linear-gradient(97deg, #479937 0.78%, #071f02 99.22%);
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.form-row input[type="file"]::file-selector-button {
-  background: linear-gradient(97deg, #479937 0.78%, #071f02 99.22%);
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-@media (max-width: 599px) {
-  .modal { max-width: 100%; border-radius: 12px; }
-  .modal-title { font-size: 18px; }
-  .form-row-inline { flex-direction: column; align-items: flex-start; }
-  .form-card {
-    flex-direction: column;
-  }
-}
-
+.form-row label { margin-bottom: 6px; font-size: 16px; color: #2E3146; font-weight: 500; }
+.form-row textarea { width: 100%; padding: 12px 14px; border: 1px solid #dbe7d7; border-radius: 10px; background: #fff; font-size: 16px; outline: none; transition: border-color .15s ease, box-shadow .15s ease; }
+.form-row textarea:focus { border-color: #479937; box-shadow: 0 0 0 3px rgba(71,153,55,.15); }
 
 /* ================= FOOTER DESKTOP ================= */
 .footer {
@@ -772,11 +697,13 @@ a[href^="mailto:alumniclub.bseu@gmail.com"]:hover { text-decoration: underline; 
         padding: 0 16px;
         width: calc(100% - 32px); /* Учитываем padding */
     }
-    .inner-container2 {
-        margin-top: 120px;
-        padding: 0 16px;
-        width: calc(100% - 32px); /* Учитываем padding */
-    }
+
+@media (max-width: 999px) {
+  .inner-container2 {
+    margin-top: 15px; /* Еще меньше отступ на мобильных */
+    padding: 0 10px; /* Добавляем небольшие отступы по бокам */
+    width: calc(100% - 32px); /* Учитываем padding */
+  }
 }
 
     .discipline-title {
@@ -806,7 +733,7 @@ a[href^="mailto:alumniclub.bseu@gmail.com"]:hover { text-decoration: underline; 
         font-weight: 400; 
         line-height: 1.4;
         letter-spacing: -0.66px; 
-        text-align: justify; 
+        text-align: left; 
     }
 
     /* Дополнительные улучшения для мобильных */
@@ -922,4 +849,43 @@ a[href^="mailto:alumniclub.bseu@gmail.com"]:hover { text-decoration: underline; 
     text-decoration: none !important;
     display: inline; 
 }
+}
+
+/* ================= АДАПТИВ ДЛЯ КАРТОЧКИ ================= */
+@media (max-width: 768px) {
+  .form-card {
+    flex-direction: column;
+    padding: 16px;
+    margin: 20px 16px;
+    width: auto;
+  }
+
+  .form-card-header {
+    flex: 0 0 auto;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(71, 153, 55, 0.2);
+    width: 100%;
+  }
+
+  .form-row {
+    margin-bottom: 12px;
+  }
+
+  .form-row label {
+    font-size: 14px;
+  }
+
+  .form-row textarea {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  /* Улучшаем читаемость на узких экранах */
+  .form-card form {
+    width: 100%;
+  }
 }
